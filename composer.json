@@ -1,0 +1,19 @@
+{
+  "name": "unicorn/teamleader",
+  "type": "cakephp-plugin",
+  "description": "Teamleader tool",
+  "keywords": [
+    "teamleader",
+    "cakephp",
+    "cake"
+  ],
+  "homepage": "https://github.com/UnicornInReverse/Teamleader",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maaike Koolmees",
+      "email": "maaikekoolmees@live.nl",
+      "role": "Developer"
+    }
+  ]
+}
