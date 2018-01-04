@@ -16,6 +16,9 @@
       "role": "Developer"
     }
   ],
+  "require": {
+    "cakephp/plugin-installer": "^1.0.0"
+  },
   "autoload": {
     "psr-4": {
       "Teamleader\\": "src"
