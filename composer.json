@@ -15,5 +15,10 @@
       "email": "maaikekoolmees@live.nl",
       "role": "Developer"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "Teamleader\\": "src"
+    }
+  }
 }
