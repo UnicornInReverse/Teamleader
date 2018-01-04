@@ -1,6 +1,7 @@
 <?php
-echo $this->Html->css('vendor/datatables.min.css');
-echo $this->Html->css('vendor/select2.min.css');
+echo $this->Html->css('Teamleader.select2.css');
+echo $this->Html->css('Teamleader.datatables.min.css');
+echo $this->Html->css('Teamleader.datepicker.css');
 ?>
 
     <div class="row">
@@ -52,11 +53,11 @@ echo $this->Html->css('vendor/select2.min.css');
     </form>
 
 <?php
-echo $this->Html->script('vendor/datepicker.min.js');
-echo $this->Html->script('vendor/select2.full.min.js');
-echo $this->Html->script('vendor/i18n/datepicker.nl.js');
-echo $this->Html->script('vendor/i18n/nl.js');
+echo $this->Html->script('Teamleader.datepicker.js', ['block' => 'script']);
+echo $this->Html->script('Teamleader.select2.full.js', ['block' => 'script']);
+echo $this->Html->script('Teamleader.datepicker.nl.js', ['block' => 'script']);
+echo $this->Html->script('Teamleader.nl.js', ['block' => 'script']);
 
-echo $this->Html->script('teamleader.js');
+echo $this->Html->script('Teamleader.teamleader.js', ['block' => 'script']);
 
 

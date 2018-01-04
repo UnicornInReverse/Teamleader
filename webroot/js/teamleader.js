@@ -1,7 +1,8 @@
 $(document).ready(function () {
+    console.log(window.location.hostname);
     $(".js-data-example-ajax").select2({
         ajax: {
-            url: "http://test.maaike.test/Teamleader/getCompany",
+            url: "http://" + window.location.hostname + "/teamleader/teamleader/get-company",
             dataType: 'json',
             method: "POST",
             delay: 250,
@@ -9,8 +10,6 @@ $(document).ready(function () {
                 return {
                     amount: 50,
                     pageno: 0,
-                    api_group: 19153,
-                    api_secret: "tOObNQn8zzU35allrmX1HLMBtagrXeGgSlhv1vurVekQfw2xJPohr1JK2P2PUzVCK3YBpiSbn3StqKQZp57GWGhOmau6zfy99mBpvkqId81tJIjYEgvrNC5ZDpV2vj2vwuKRE1qH0h1zQbokhJBUcxJFNvy9Frv1L6JfXZNO7EeOFsYN1qy4O8zstYsYgNPRJpXxeAcc",
                     searchby: params.term // search term
                 };
             },

@@ -6,14 +6,13 @@
  * Time: 11:40
  */
 
-namespace App\Controller;
+namespace Teamleader\Controller;
 
 use Cake\Http\Client;
-use Cake\Validation\Validation;
-use Cake\Validation\Validator;
 use DateInterval;
 use DateTime;
 use DateTimeImmutable;
+use Cake\Core\Configure;
 
 
 class TeamleaderController extends AppController
@@ -62,8 +61,8 @@ class TeamleaderController extends AppController
                 'date_from' => $date_from->format('d/m/Y'),
                 'date_to' => $date_to->format('d/m/Y'),
                 'company_id' => $this->request->data('company'),
-                'api_secret' => Configure::read('Teamleader.secret'),
-                'api_group' => Configure::read('Teamleader.secret')
+                'api_secret' => 'tOObNQn8zzU35allrmX1HLMBtagrXeGgSlhv1vurVekQfw2xJPohr1JK2P2PUzVCK3YBpiSbn3StqKQZp57GWGhOmau6zfy99mBpvkqId81tJIjYEgvrNC5ZDpV2vj2vwuKRE1qH0h1zQbokhJBUcxJFNvy9Frv1L6JfXZNO7EeOFsYN1qy4O8zstYsYgNPRJpXxeAcc',
+                'api_group' => 19153
             ]);
 
         if ($response->getStatusCode() != 200) {
@@ -87,8 +86,8 @@ class TeamleaderController extends AppController
                 'amount' => 10,
                 'pageno' => 0,
                 'searchby' => $this->request->data('searchby'),
-                'api_secret' => Configure::read('Teamleader.secret'),
-                'api_group' => Configure::read('Teamleader.secret')
+                'api_secret' => Configure::read('Teamleader.api_secret'),
+                'api_group' => Configure::read('Teamleader.api_group'),
             ]);
 
         if ($response->getStatusCode() != 200) {
