@@ -18,7 +18,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "unicorn\\Teamleader\\": "src"
+      "Teamleader\\": "src"
     }
   }
 }
